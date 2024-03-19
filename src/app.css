@@ -1,0 +1,16 @@
+main {
+  display: grid;
+  grid-template-areas: "a b" "c d" "e d";
+  grid-template-rows: auto 0px auto;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+@media (min-width: 1200px) {
+  main {
+    grid-template-areas: "a c c" "b e d";
+    grid-template-rows: auto auto;
+    row-gap: 10px;
+    grid-template-columns: min-content min-content min-content;
+  }
+}
