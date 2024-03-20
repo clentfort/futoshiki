@@ -21,12 +21,9 @@ constraint_holds(Matrix, (X,Y)=L) :-
   list_to_fdset(L, Set),
   Elem in_set Set.
 
-with_length(Length, List) :-
-  length(List, Length).
-
 solve_futoshiki(Size, Constraints, Board) :-
-  with_length(Size, Board),
-  maplist(with_length(Size), Board),
+  length(Board, Size),
+  maplist(same_length(Board), Board),
 
   append(Board, Values), 
   Values ins 1..Size, 

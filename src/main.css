@@ -1,4 +1,8 @@
 :root {
+  /** 
+   * Industrial style font stack
+   * @see https://github.com/system-fonts/modern-font-stacks#industrial
+   */
   font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
     "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
   font-weight: normal;
